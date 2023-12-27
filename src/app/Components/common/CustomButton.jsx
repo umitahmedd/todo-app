@@ -4,7 +4,7 @@ import { PlusCircleIcon } from "@heroicons/react/24/outline";
 const CustomButton = ({ action, buttonType, roundSize, children }) => {
   return (
     <button
-      className={`bg-blue-500 hover:bg-blue-600 px-4 py-3 text-white transition-all flex items-center justify-center gap-2  ${
+      className={`bg-theme-blue-normal hover:bg-theme-blue-dark px-4 py-3 text-white transition-all flex items-center justify-center gap-2  ${
         buttonType === "white"
           ? "bg-white !text-blue-600 !hover:text-blue-500"
           : ""
