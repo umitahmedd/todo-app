@@ -1,5 +1,5 @@
 import React from "react";
-import { PlusIcon } from "@heroicons/react/24/solid";
+import { PlusCircleIcon } from "@heroicons/react/24/outline";
 
 const CustomButton = ({ action, buttonType, roundSize, children }) => {
   return (
@@ -21,11 +21,11 @@ const CustomButton = ({ action, buttonType, roundSize, children }) => {
       }`}
       onClick={action}
     >
-      {buttonType === "addButton" && (
-        <PlusIcon className="w-5 h-5 text-white" />
-      )}
-
       {children}
+
+      {buttonType === "addButton" && (
+        <PlusCircleIcon className="w-5 h-5 text-white" />
+      )}
     </button>
   );
 };
